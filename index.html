@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Funnel Professor Image Generator</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hidden images for Base64 conversion -->
+    <div style="display: none;">
+        <img id="ref-img-Mascot-Exclamation-100.png" src="Mascot-Exclamation-100.png" data-filename="Mascot-Exclamation-100.png" data-mimetype="image/png" alt="Reference Mascot Exclamation">
+        <img id="ref-img-SalesFunnelProfessorLogo.300.png" src="SalesFunnelProfessorLogo.300.png" data-filename="SalesFunnelProfessorLogo.300.png" data-mimetype="image/png" alt="Reference Logo">
+        <img id="ref-img-Horrified-Professor.webp" src="Horrified-Professor.webp" data-filename="Horrified-Professor.webp" data-mimetype="image/webp" alt="Reference Horrified">
+        <img id="ref-img-Go-to-Market-Strategy.webp" src="Go-to-Market-Strategy.webp" data-filename="Go-to-Market-Strategy.webp" data-mimetype="image/webp" alt="Reference GTM">
+        <img id="ref-img-TravelingProfessor.webp" src="TravelingProfessor.webp" data-filename="TravelingProfessor.webp" data-mimetype="image/webp" alt="Reference Traveling">
+        <img id="ref-img-BadResultMascot-1794x2048.png" src="BadResultMascot-1794x2048.png" data-filename="BadResultMascot-1794x2048.png" data-mimetype="image/png" alt="Reference Bad Result">
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Sales Funnel Professor Image Generator</h1>
+            <p class="subtitle">Powered by Ironwood AI & Gemini</p>
+            <p id="extensionInfo">Checking image loading status...</p>
+        </header>
+
+        <section class="prompt-section">
+            <label for="promptInput">Describe the action for the Professor:</label>
+            <textarea id="promptInput" rows="3" placeholder="e.g., Jumping into a pool yelling Geronimo!"></textarea>
+        </section>
+
+        <section class="generate-button-area">
+             <button id="generate-button" class="btn-primary" disabled>Load Images First</button>
+        </section>
+
+        <div id="loadingIndicator">
+             <div class="loader"></div>
+             <p>Generating images...</p>
+        </div>
+
+        <div id="messageArea"></div>
+
+        <section id="imageResults">
+            <!-- Generated images will appear here -->
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Ironwood AI. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
